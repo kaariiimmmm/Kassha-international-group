@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffaf00, #bb02ff);
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 1150px;
+    padding: 35px;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0,2);
+    transition: 0.5s;
+}
+
+.container:hover .card{
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+
+.container .card:hover{
+    filter: blur(0);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.container .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+}
+
+.container .card .circle h2{
+    color: #fff;
+    font-size: 4em;
+    padding: 30px 0;
+}
+
+.container .card .content{
+    position: absolute;
+    bottom: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 35px;
+}
+
+.container .card .content p{
+    color: #666;
+    
+    font-size: 17px;
+    padding-bottom: 40px;
+}
+
+.container .card .content a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color:#fff;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    
+}
+
+.container .card:nth-child(1) .circle,
+.container .card:nth-child(1) .content a{
+    background-color: #ffaf00;
+}
+
+.container .card:nth-child(2) .circle,
+.container .card:nth-child(2) .content a{
+    background-color: #da2268;
+}
+
+.container .card:nth-child(3) .circle,
+.container .card:nth-child(3) .content a{
+    background-color: #bb02ff;
+}
+
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+    .container .card .content{
+    padding-left: 35px;
+    
+}
+
+.container .card .circle h2 {
+    font-size: 3.8em;
+}
+}
+
+  /* Tablets and smaller desktops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+  /* Standard desktops and larger */
+    @media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px){
+
+}

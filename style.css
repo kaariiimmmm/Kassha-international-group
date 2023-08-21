@@ -1,0 +1,206 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*header start*/
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(photos/coffeefy-workafe-sQSouGcgeVA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.logo{
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    color: #eee;
+
+}
+
+span{
+    color: #d38015;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:#d38015;
+    transition: 0.3s;
+}
+/*header end*/
+
+/*description start*/
+.Description{
+    height: 100vh;
+    width: 100%;
+    background-image: url(photos/jessica-loaiza-jxfByDVJmS4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 25px;
+    padding-right: 450px;
+    font-family: 'Raleway', sans-serif;
+    color: #eee;
+    line-height: 1.5;
+}
+
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+/*description end*/
+
+.click-here a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.contact{
+    height: 60vh;
+    width: 100%;
+    background-color: #2d0606;
+    color: #eee;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.contact h1{
+    color: #eee;
+    padding-left: 40%;
+    padding-top: 2%;
+}
+
+.h2-mail{
+    font-size: 30px;
+    font-weight: bolder;
+    
+}
+
+.contact .h2-mail{
+    padding-left: 15%;
+    padding-top: 30px;
+}
+
+.mail{
+    font-size: 25px;
+}
+
+.contact .mail{
+    padding-left: 17%;
+}
+
+.contact .phone-num{
+    padding-left: 65%;
+    margin-top: -7%;
+}
+
+.phone-num{
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.contact .phone-num ul li{
+    list-style-type: none;
+    margin-left: -7%;
+}
+
+.contact .mail a{
+    text-decoration: none;
+    color: #eee;
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+    .header{
+        width: 194%;
+    }
+    .contact{
+        width: 194%;
+    }
+    .Description{
+        width: 100%;
+    }
+}
+
+  /* Tablets and smaller desktops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .contact h1{
+        padding-left: 30%;
+    }
+    .contact .h2-mail{
+        padding-left: 10%;
+    } 
+    .contact .mail{
+        padding-left: 14%;
+    }
+    .contact .phone-num{
+        margin-top: -11%;
+    }
+}
+
+  /* Standard desktops and larger */
+    @media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px){
+    .logo{
+        font-size: 35px;
+    }
+    nav ul li {
+        font-size: 30px;
+    }
+    .Description{
+        padding-top: 100px;
+        padding-right: 500px;
+        height: 80vh;
+        line-height: 1.8;
+    }
+    .contact{
+        height: 40vh;
+    }
+}
+
+@media only screen and (width: 375px){
+    .Description{
+        width: 150%;
+    }
+} 

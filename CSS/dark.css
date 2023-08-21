@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(26.5deg, #666, #555 50%, #fff 50%, #fff 100%);
+  }
+  
+  .card{
+    position: relative;
+    
+    height: 380px;
+    background-color: black;
+    box-shadow: 0 15px 4px rgba(0,0,0,0.1);
+    display: flex;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  
+  
+  
+  .card .imgbx{
+    position: relative;
+    min-width: 300px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .card .imgbx img{
+    max-width: 250px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card .details{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .card .details::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+  }
+  
+  .card .details h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: .9em;
+  }
+  
+  .card .details h3 span{
+    font-size: 0.65em;
+    font-weight: 300;
+    text-transform: none;
+    opacity: 0.85;
+  }
+  
+  .card .details h4{
+    color:#fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1em;
+  }
+  
+  .card .details p{
+    color:#fff;
+    font-size: medium;
+    padding-top: 20px;
+    line-height: 1.7em;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .card .imgbx img{
+      max-width: 200px;
+    }
+    .card{
+      height: 490px;
+}
+  }
+  /* Tablets and smaller desktops */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+  /* Standard desktops and larger */
+    @media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2559px){
+  .card{
+    height: 430px;
+}
+.card .details {
+  width: 450px;
+
+}
+.card .details h3 {
+  font-size: 1.9em;
+}
+.card .details h3 span{
+  font-size: 0.75em;
+}
+.card .details h4{
+  font-size: 1.2em;
+}
+.card .details p{
+  line-height: 2em;
+}
+}
